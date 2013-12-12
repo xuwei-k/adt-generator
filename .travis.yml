@@ -1,0 +1,7 @@
+language: scala
+
+scala:
+  - 0.13.0
+  - 0.13.1
+
+script: ./travis.sh

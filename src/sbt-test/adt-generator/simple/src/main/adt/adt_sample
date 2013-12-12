@@ -1,0 +1,32 @@
+Literal
+	Bool
+		b: Boolean
+	Num
+		i: Int
+
+Exp
+	Id
+		name: String
+	Fun
+		arg: String
+		argType: Type
+		body: Exp
+	App
+		f: Exp
+		arg: Exp
+	Lit
+		l: Literal
+	If
+		tst: Exp
+		thn: Exp
+		els: Exp
+
+Type
+	TyLam
+		f: Type
+		arg: Type
+	TyBuiltin
+		name: String
+	TyVar
+		name: String
+
