@@ -35,3 +35,5 @@ watchSources <++= sbtTestDirectory.map{_.***.get}
 libraryDependencies ++= Seq(
   "org.scala-sbt" % "datatype-generator" % sbtVersion.value
 )
+
+scriptedLaunchOpts += "-Dplugin.version=" + version.value
